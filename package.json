@@ -1,0 +1,43 @@
+{
+  "name": "@cangulo-blog/components",
+  "version": "0.0.1-beta",
+  "author": {
+    "name": "Carlos Angulo",
+    "email": "cangulo_npm@outlook.com",
+    "url": "https://cangulo.github.io/"
+  },
+  "description": "Carlos Angulo blog components",
+  "private": false,
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "react": "^17.0.2"
+  },
+  "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production babel lib --out-dir dist --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cangulo/blog-components.git"
+  },
+  "keywords": [
+    "blog",
+    "components",
+    "cangulo"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cangulo/blog-components/issues"
+  },
+  "homepage": "https://github.com/cangulo/blog-components",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0"
+  }
+}
