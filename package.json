@@ -16,7 +16,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@docusaurus/module-type-aliases": "^2.0.0-beta.9",
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "react-share": "^4.4.0"
   },
   "scripts": {
     "build": "rm -rf dist && NODE_ENV=production babel lib --out-dir dist --copy-files",
