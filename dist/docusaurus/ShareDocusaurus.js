@@ -15,26 +15,26 @@ var _ = require("..");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function CaptionDocusaurus(_ref) {
-  var label = _ref.label,
-      link = _ref.link,
-      linkIsRelative = _ref.linkIsRelative;
+function ShareDocusaurus(_ref) {
+  var slug = _ref.slug,
+      title = _ref.title,
+      tags = _ref.tags;
 
   var _useDocusaurusContext = (0, _useDocusaurusContext2["default"])(),
       siteConfig = _useDocusaurusContext.siteConfig;
 
-  var rawGitUrl = siteConfig.customFields.rawGitUrl;
-  var urlToFile = linkIsRelative ? rawGitUrl.concat(link) : link;
-  return /*#__PURE__*/_react["default"].createElement(_.CaptionComponent, {
-    label: label,
-    link: urlToFile
+  var fullUrl = "".concat(siteConfig.url, "/").concat(slug);
+  return /*#__PURE__*/_react["default"].createElement(_.ShareComponent, {
+    title: title,
+    link: fullUrl,
+    tags: tags
   });
 }
 
-CaptionDocusaurus.propTypes = {
-  label: _propTypes["default"].string.isRequired,
-  link: _propTypes["default"].string.isRequired,
-  linkIsRelative: _propTypes["default"].bool.isRequired
+ShareDocusaurus.propTypes = {
+  slug: _propTypes["default"].string.isRequired,
+  title: _propTypes["default"].string.isRequired,
+  tags: _propTypes["default"].array.isRequired
 };
-var _default = CaptionDocusaurus;
+var _default = ShareDocusaurus;
 exports["default"] = _default;
