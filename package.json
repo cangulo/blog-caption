@@ -1,6 +1,6 @@
 {
   "name": "@cangulo-blog/components",
-  "version": "0.0.1-beta",
+  "version": "0.0.2-beta",
   "author": {
     "name": "Carlos Angulo",
     "email": "cangulo_npm@outlook.com",
@@ -15,10 +15,13 @@
   ],
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@docusaurus/module-type-aliases": "^2.0.0-beta.9",
     "react": "^17.0.2"
   },
   "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production babel lib --out-dir dist --copy-files"
+    "build": "rm -rf dist && NODE_ENV=production babel lib --out-dir dist --copy-files",
+    "pack": "npm pack",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
