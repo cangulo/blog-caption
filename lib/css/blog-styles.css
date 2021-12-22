@@ -69,3 +69,7 @@ div.gif-iframe > iframe {
   margin-left: auto;
   margin-right: auto;
 }
+
+.mdx-page p {
+    text-align: justify;
+}
