@@ -1,0 +1,27 @@
+name: 🚀 continuous-delivery
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  semver:
+    name: 🚀 release new version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.CANGULO_BOT_PUSH_COMMITS }} # required for pushing to main, it is a protected branch
+
+      - name: release new version
+        uses: cangulo-actions/semver@0.10.0
+        id: semver
+        with:
+          configuration: commits-semver.yml
+          version-file: version.txt
+          create-gh-release: true
+          print-summary: true
+          print-annotations: true
+          include-previous-non-releasable-commits: true

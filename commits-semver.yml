@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/cangulo-actions/semver/0.10.0/config.schema.yml
+
+commits:
+  - type: break
+    release: major
+  - type: feat
+    release: minor
+  - type: fix
+    release: patch
+  - type: refactor
+    release: none
+  - type: docs
+    release: patch
+  - type: ci
+    release: none
