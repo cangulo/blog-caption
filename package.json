@@ -1,48 +1,48 @@
 {
-  "name": "@cangulo-blog/components",
-  "version": "0.0.10",
-  "author": {
-    "name": "Carlos Angulo",
-    "email": "cangulo_npm@outlook.com",
-    "url": "https://cangulo.github.io/"
-  },
-  "description": "Carlos Angulo blog components",
-  "private": false,
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.16.5",
-    "@babel/polyfill": "^7.12.1",
-    "@docusaurus/module-type-aliases": "^2.0.0-beta.9",
-    "react": "^17.0.2",
-    "react-share": "^4.4.0"
-  },
-  "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production babel lib --out-dir dist --copy-files",
-    "pack": "npm pack",
-    "publish": "npm publish --access public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cangulo/blog-components.git"
-  },
-  "keywords": [
-    "blog",
-    "components",
-    "cangulo"
-  ],
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cangulo/blog-components/issues"
-  },
-  "homepage": "https://github.com/cangulo/blog-components",
-  "devDependencies": {
-    "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "@babel/preset-react": "^7.16.0"
-  }
+	"name": "@cangulo-blog/components",
+	"version": "0.0.11",
+	"author": {
+		"name": "Carlos Angulo",
+		"email": "cangulo_npm@outlook.com",
+		"url": "https://cangulo.github.io/"
+	},
+	"description": "Carlos Angulo blog components",
+	"private": false,
+	"main": "dist/index.js",
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"dependencies": {
+		"@babel/plugin-transform-runtime": "^7.16.5",
+		"@babel/polyfill": "^7.12.1",
+		"@docusaurus/module-type-aliases": "^2.0.0-beta.9",
+		"react": "^17.0.2",
+		"react-share": "^4.4.0"
+	},
+	"scripts": {
+		"build": "rm -rf dist && NODE_ENV=production babel lib --out-dir dist --copy-files",
+		"pack": "npm pack",
+		"publish": "npm publish --access public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cangulo/blog-components.git"
+	},
+	"keywords": [
+		"blog",
+		"components",
+		"cangulo"
+	],
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/cangulo/blog-components/issues"
+	},
+	"homepage": "https://github.com/cangulo/blog-components",
+	"devDependencies": {
+		"@babel/cli": "^7.16.0",
+		"@babel/core": "^7.16.0",
+		"@babel/preset-env": "^7.16.4",
+		"@babel/preset-react": "^7.16.0"
+	}
 }
