@@ -1,4 +1,7 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/cangulo-actions/semver/0.10.0/config.schema.yml
+# yaml-language-server: $schema=https://raw.githubusercontent.com/cangulo-actions/semver/0.11.1/config.schema.yml
+
+versioning:
+  file: package.json
 
 commits:
   - type: break
@@ -10,6 +13,6 @@ commits:
   - type: refactor
     release: none
   - type: docs
-    release: patch
+    release: none
   - type: ci
     release: none
