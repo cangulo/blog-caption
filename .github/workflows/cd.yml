@@ -51,4 +51,4 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_CANGULO_BLOG_COMPONENTS }}
           ASSET_FILE: "cangulo-blog-components-${{ steps.semver.outputs.version }}.tgz"
         run: |
-          npm publish --access=public $ASSET_FILE
+          npm publish --access=public
