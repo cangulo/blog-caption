@@ -1,3 +1,8 @@
+# 0.0.17 fix: [cd.yml] test publish NPM package (#9)
+
+## patches:
+* fix: [cd.yml] test publish NPM package (#9)
+
 # 0.0.16 fix: [cd.yml] add step to publish the npm package to @cangulo-blog/components (#8)
 
 ## patches:
