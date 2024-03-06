@@ -1,3 +1,8 @@
+# 0.0.15 fix: [cd.yml] updated GH workflow (#7)
+
+## patches:
+* fix: [cd.yml] updated GH workflow (#7)
+
 # 0.0.14 fix: [cd] updated semver GH action version (#6)
 
 ## patches:
