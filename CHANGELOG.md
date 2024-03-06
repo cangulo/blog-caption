@@ -1,3 +1,8 @@
+# 0.0.14 fix: [cd] updated semver GH action version (#6)
+
+## patches:
+* fix: [cd] updated semver GH action version (#6)
+
 # 0.0.13 fix: simplify workflows (#5)
 
 ## patches:
