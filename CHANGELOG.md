@@ -1,3 +1,8 @@
+# 0.0.20 fix: [cd.yml] test publish NPM package (#12)
+
+## patches:
+* fix: [cd.yml] test publish NPM package (#12)
+
 # 0.0.19 fix: [cd.yml] test publish NPM package (#11)
 
 ## patches:
