@@ -28,15 +28,15 @@ jobs:
           print-annotations: true
           include-previous-non-releasable-commits: true
 
-      - name: push zip file to GH release
-        if: ${{ steps.semver.outputs.new-version-released == 'true' }}
-        env:
-          NEW_VERSION: ${{ steps.semver.outputs.version }}
-          ASSET_FILE: "cangulo-blog-components-${{ steps.semver.outputs.version }}.tgz"
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npm pack
-          gh release upload $NEW_VERSION $ASSET_FILE
+      # - name: push zip file to GH release
+      #   if: ${{ steps.semver.outputs.new-version-released == 'true' }}
+      #   env:
+      #     NEW_VERSION: ${{ steps.semver.outputs.version }}
+      #     ASSET_FILE: "cangulo-blog-components-${{ steps.semver.outputs.version }}.tgz"
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     npm pack
+      #     gh release upload $NEW_VERSION $ASSET_FILE
 
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v4
