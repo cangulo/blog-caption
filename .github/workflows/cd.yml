@@ -50,4 +50,4 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_CANGULO_BLOG_COMPONENTS }}
         run: |
-          npm publish --access public
+          npm run publish
