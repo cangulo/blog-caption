@@ -1,3 +1,8 @@
+# 0.0.16 fix: [cd.yml] add step to publish the npm package to @cangulo-blog/components (#8)
+
+## patches:
+* fix: [cd.yml] add step to publish the npm package to @cangulo-blog/components (#8)
+
 # 0.0.15 fix: [cd.yml] updated GH workflow (#7)
 
 ## patches:
