@@ -36,5 +36,18 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm pack
-          ls -la
           gh release upload $NEW_VERSION $ASSET_FILE
+
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v4
+        if: ${{ steps.semver.outputs.new-version-released == 'true' }}
+        with:
+          node-version: "20.x"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: publish to NPM
+        if: ${{ steps.semver.outputs.new-version-released == 'true' }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_CANGULO_BLOG_COMPONENTS }}
+        run: |
+          npm publish --access public
