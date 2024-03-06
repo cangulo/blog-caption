@@ -1,3 +1,8 @@
+# 0.0.23 fix: [cd.yml] finished modifications in GH workflows (#15)
+
+## patches:
+* fix: [cd.yml] finished modifications in GH workflows (#15)
+
 # 0.0.22 fix: [cd.yml] test publish NPM package (#14)
 
 ## patches:
