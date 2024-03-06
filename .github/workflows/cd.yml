@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   semver:
     name: 🚀 release new version
@@ -16,7 +19,7 @@ jobs:
           token: ${{ secrets.CANGULO_BOT_PUSH_COMMITS }} # required for pushing to main, it is a protected branch
 
       - name: release new version
-        uses: cangulo-actions/semver@0.12.1
+        uses: cangulo-actions/semver@0.12.2
         id: semver
         with:
           configuration: commits-semver.yml
@@ -24,3 +27,14 @@ jobs:
           print-summary: true
           print-annotations: true
           include-previous-non-releasable-commits: true
+
+      - name: push zip file to GH release
+        if: ${{ steps.semver.outputs.new-version-released == 'true' }}
+        env:
+          NEW_VERSION: ${{ steps.semver.outputs.version }}
+          ASSET_FILE: "cangulo-blog-components-${{ steps.semver.outputs.version }}.tgz"
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm pack
+          ls -la
+          gh release upload $NEW_VERSION $ASSET_FILE
