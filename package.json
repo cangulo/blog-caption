@@ -21,9 +21,7 @@
 		"react-share": "^4.4.0"
 	},
 	"scripts": {
-		"build": "rm -rf dist && NODE_ENV=production babel lib --out-dir dist --copy-files",
-		"pack": "npm pack",
-		"publish": "npm publish --access public"
+		"build": "rm -rf dist && NODE_ENV=production babel lib --out-dir dist --copy-files"
 	},
 	"repository": {
 		"type": "git",
