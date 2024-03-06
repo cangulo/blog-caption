@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/cangulo-actions/semver/0.11.1/config.schema.yml
+# yaml-language-server: $schema=https://raw.githubusercontent.com/cangulo-actions/semver/issue109/config.schema.yml
 
 versioning:
   file: package.json
@@ -16,3 +16,9 @@ commits:
     release: none
   - type: ci
     release: none
+
+precommitcommands:
+  enabled: true
+  commands:
+    - npm install
+    - npm run build
