@@ -1,3 +1,8 @@
+# 0.0.24 fix: updated experience (#16)
+
+## patches:
+* fix: updated experience (#16)
+
 # 0.0.23 fix: [cd.yml] finished modifications in GH workflows (#15)
 
 ## patches:
