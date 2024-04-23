@@ -15,7 +15,7 @@ jobs:
       - name: Validate Conventional Commits
         uses: cangulo-actions/conventional-commits-validator@0.5.0
         with:
-          configuration: commits-semver.yml
+          configuration: .github/semver.yml
           calculate-next-release: true
           label-pr-with-release-type: true
           label-pr-with-commit-types: true

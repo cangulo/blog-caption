@@ -22,7 +22,7 @@ jobs:
         uses: cangulo-actions/semver@0.12.2
         id: semver
         with:
-          configuration: commits-semver.yml
+          configuration: .github/semver.yml
           create-gh-release: true
           print-summary: true
           print-annotations: true
