@@ -1,3 +1,8 @@
+# 0.0.25 fix: updated personal projects (#17)
+
+## patches:
+* fix: updated personal projects (#17)
+
 # 0.0.24 fix: updated experience (#16)
 
 ## patches:
