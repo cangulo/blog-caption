@@ -1,3 +1,8 @@
+# 0.0.27 fix: [dependabot] updated GH actions dependencies
+
+## patches:
+* fix: [dependabot] updated GH actions dependencies
+
 # 0.0.26 fix: [dependabot] updated GH actions dependencies
 
 ## patches:
