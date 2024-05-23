@@ -1,3 +1,10 @@
+# 0.0.26 fix: [dependabot] updated GH actions dependencies
+
+## patches:
+* fix: [dependabot] updated GH actions dependencies
+## others
+* ci: [dependabot] updated dependabot config
+
 # 0.0.25 fix: updated personal projects (#17)
 
 ## patches:
