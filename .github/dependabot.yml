@@ -1,10 +1,13 @@
----
 version: 2
+# refresh: 20240523-1
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+    labels:
+      - "dependencies"
+      - "dependabot"
+      - "gh-workflows"
     commit-message:
-      prefix: "fix: updated GH actions dependencies."
-      include: "scope"
+      prefix: "ci: [dependabot] " # extra whitespace to avoid second ":" in the commit message
