@@ -1,3 +1,10 @@
+# 0.0.28 fix: force new version release (#26)
+
+## patches:
+* fix: force new version release (#26)
+## others
+* docs: updated expererience (#25)
+
 # 0.0.27 fix: [dependabot] updated GH actions dependencies
 
 ## patches:
