@@ -1,3 +1,31 @@
+# 0.0.29 fix: force deleted twitter account
+
+## patches:
+* fix: force deleted twitter account
+## others
+* Bumps [cangulo-actions/semver](https://github.com/cangulo-actions/semver) from 0.14.2 to 0.14.9.
+* - [Release notes](https://github.com/cangulo-actions/semver/releases)
+* - [Changelog](https://github.com/cangulo-actions/semver/blob/main/CHANGELOG.md)
+* - [Commits](https://github.com/cangulo-actions/semver/compare/0.14.2...0.14.9)
+* ---
+* updated-dependencies:
+* - dependency-name: cangulo-actions/semver
+* dependency-type: direct:production
+* update-type: version-update:semver-patch
+* ...
+* Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
+* Bumps [cangulo-actions/conventional-commits-validator](https://github.com/cangulo-actions/conventional-commits-validator) from 0.5.1 to 0.5.2.
+* - [Release notes](https://github.com/cangulo-actions/conventional-commits-validator/releases)
+* - [Changelog](https://github.com/cangulo-actions/conventional-commits-validator/blob/main/CHANGELOG.md)
+* - [Commits](https://github.com/cangulo-actions/conventional-commits-validator/compare/0.5.1...0.5.2)
+* ---
+* updated-dependencies:
+* - dependency-name: cangulo-actions/conventional-commits-validator
+* dependency-type: direct:production
+* update-type: version-update:semver-patch
+* ...
+* Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
+
 # 0.0.28 fix: force new version release (#26)
 
 ## patches:
